@@ -19,9 +19,9 @@ The **`Clip`** folder contains segmented data for all valid experimental trials.
 These clips are generated according to the unified start and end timestamps defined in variables `start_tmsp_ns` and `end_tmsp_ns` in `ref_timestamp.py`. The main characteristics are:
 
 - Each modality has been **cut according to the same experimental time intervals** recorded in `ref_timestamp.py`.
-- All processed data are **stored in CSV format**.
-- The **first column of every CSV file** contains the corresponding **Unix timestamp**, preserving temporal alignment across modalities.
-- Due to storage limitations, the **raw facial video**, **raw eye-tracking data**, and **raw triple-screen recordings** are **not uploaded** as raw data; only their cliped data are available in the `Clip` folder.
+- All processed data are stored in **CSV format**.
+- The **first column** of every CSV file contains the corresponding **Unix timestamp**, preserving temporal alignment across modalities.
+- Due to storage limitations, the **raw facial video**, **raw eye-tracking data**, and **raw triple-screen recordings** are not uploaded as raw data; only their cliped data are available in the `Clip` folder.
 
 #### *`RawData` Folder*
 
@@ -80,7 +80,7 @@ Using ICLabel greatly improves the efficiency of artifact removal and avoids man
 This script removes segments of EEG data with **abnormally large amplitudes**.  
 In the current code, the amplitude threshold is set to **100 μV**.
 
-Because EmoRoad is a **driving task**, participants inevitably move their heads (e.g., turning to check the rear-view mirrors), which can cause very large voltage fluctuations in the EEG signals. These large-amplitude artifacts are often **not fully removed by ICA**, so this script provides an additional amplitude-based rejection step to exclude such segments from further analysis.
+Because EmoRoad is a driving task, participants inevitably move their heads (e.g., turning to check the rear-view mirrors), which can cause very large voltage fluctuations in the EEG signals. These large-amplitude artifacts are often **not fully removed by ICA**, so this script provides an additional amplitude-based rejection step to exclude such segments from further analysis.
 
 ### `main_corr_car_dynamics_v1_1.py`, `main_corr_eeg_v1_1.py`, `main_corr_emosense_v1_1.py`
 
@@ -119,7 +119,7 @@ As mentioned earlier, this script stores three key variables:
 - `end_tmsp_ns` – the **end timestamp** (in nanoseconds) for each driving task of each participant  
 - `task_order` – the **order of driving tasks** for each participant  
 
-Except for the **eye-tracking data**, all other modalities have already been **reordered** according to the task order shown in the **Driving Task Index Mapping** table using these timestamps and `task_order`.
+Except for the eye-tracking data, all other modalities have already been reordered according to the task order shown in the **Driving Task Index Mapping** table using these timestamps and `task_order`.
 
 
 
