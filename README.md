@@ -52,7 +52,7 @@ However, for consistency, the data files are **stored following the fixed task o
 All scripts in this repository were tested with MATLAB R2025b, EEGLAB v2025.1.0, and Python 3.12.
 
 
-#### `main_eeg_artifacts_remove_ica_v1_1.m`
+### `main_eeg_artifacts_remove_ica_v1_1.m`
 
 This script uses **EEGLAB** to preprocess EEG data. The main steps include:
 
@@ -75,14 +75,14 @@ Researchers can adjust these thresholds according to the characteristics and qua
 
 Using ICLabel greatly improves the efficiency of artifact removal and avoids manual inspection of each ICA component, making it well suited for large-scale EEG datasets.
 
-#### `main_eeg_artifacts_remove_large_amplitude_v1_1.m`
+### `main_eeg_artifacts_remove_large_amplitude_v1_1.m`
 
 This script removes segments of EEG data with **abnormally large amplitudes**.  
 In the current code, the amplitude threshold is set to **100 μV**.
 
 Because EmoRoad is a driving task, participants inevitably move their heads (e.g., turning to check the rear-view mirrors), which can cause very large voltage fluctuations in the EEG signals. These large-amplitude artifacts are often **not fully removed by ICA**, so this script provides an additional amplitude-based rejection step to exclude such segments from further analysis.
 
-#### `main_corr_car_dynamics_v1_1.py`, `main_corr_eeg_v1_1.py`, `main_corr_emosense_v1_1.py`
+### `main_corr_car_dynamics_v1_1.py`, `main_corr_eeg_v1_1.py`, `main_corr_emosense_v1_1.py`
 
 These scripts perform correlation analyses between different signal modalities and three types of traffic context: **Weather**, **Traffic volume**, and **Road scenarios (Area)**.
 
@@ -99,19 +99,19 @@ These scripts perform correlation analyses between different signal modalities a
 
   It then computes the **mean** and **variance** of these two quantities over time and analyzes their correlations with the three traffic context factors (Weather, Traffic volume, Road scenarios).
 
-#### `main_draw_eyetracking_v1_1.py`
+### `main_draw_eyetracking_v1_1.py`
 
 This script visualizes, for each driving task, the distribution of **fixation duration ratios** across the triple-screen setup.
 
 For all participants and each task, it computes the proportion of total fixation time that falls on **each of the three screens**, and then plots the distribution of these **screen-wise duration ratios** across subjects.
 
-#### `main_draw_imotions_v1_1.py`
+### `main_draw_imotions_v1_1.py`
 
 This script visualizes, for each driving task, the **average duration ratio** of each emotion category labeled by the participants.
 
 In other words, for every emotion type and driving task, it computes the proportion of task time during which that emotion was present and plots the mean duration ratio across participants.
 
-#### `ref_timestamp.py`
+### `ref_timestamp.py`
 
 As mentioned earlier, this script stores three key variables:
 
