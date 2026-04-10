@@ -121,7 +121,9 @@ As mentioned earlier, this script stores three key variables:
 
 Except for the eye-tracking data, all other modalities have already been reordered according to the task order shown in the **Driving Task Index Mapping** table using these timestamps and `task_order`.
 
+### `Figure12_mean_std_seconds_8x11.csv`
 
+It is the table of absolute emotion durations per task (in seconds) together with variability (mean ± SD across participants) to support reuse and facilitate alternative regroupings of emotion categories. 
 
 
 
