@@ -125,6 +125,8 @@ Except for the eye-tracking data, all other modalities have already been reorder
 
 It is the table of absolute emotion durations per task (in seconds) together with variability (mean ± SD across participants) to support reuse and facilitate alternative regroupings of emotion categories. 
 
+### `baseline_model folder`
 
-
+- **`features_all_10s.csv`** is the multimodal features extracted from EEG, Eye-tracking, and EmoSense following the settings in the paper and supplementary materials.
+- **`main_train_lgb.py`** is the training file to train a multimodal LightGBM model for emotion recognition.
 
