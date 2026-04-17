@@ -130,3 +130,7 @@ It is the table of absolute emotion durations per task (in seconds) together wit
 - **`features_all_10s.csv`** is the multimodal features extracted from EEG, Eye-tracking, and EmoSense following the settings in the paper and supplementary materials.
 - **`main_train_lgb.py`** is the training file to train a multimodal LightGBM model for emotion recognition.
 
+### `quality_control_eeg folder`
+
+- **`qc_removed_num_ica.csv`** reports the number of ICA components removed
+- **`qc_removed_prop_thr.csv`** reports the proportion of samples removed under the ±100 μV amplitude criterion
