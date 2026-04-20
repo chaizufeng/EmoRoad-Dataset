@@ -5,7 +5,7 @@
 - **Behavioral data**: eye-tracking, facial expressions, steering wheel touch information, vehicle dynamics, and screen recordings  
 - **Psychological data**: emotion annotations  
 
-The EmoRoad dataset is publicly available and can be accessed and downloaded via its DOI: 10.5281/zenodo.19641357.
+The EmoRoad dataset is publicly available and can be accessed and downloaded via its DOI: 10.5281/zenodo.19641357, Link: https://zenodo.org/records/19641357.
 
 ## EmoRoad Dataset Organization and File Structure
 
