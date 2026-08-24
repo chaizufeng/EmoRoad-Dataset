@@ -7,6 +7,16 @@
 
 The EmoRoad dataset is publicly available and can be accessed and downloaded via its DOI: 10.5281/zenodo.21001746, Link: https://zenodo.org/records/21001746.
 
+## Related publication and citation
+
+This dataset is associated with the following publication. If you use this dataset, please cite the associated paper and latest Zenodo record.
+
+**Associated paper**:
+Chai, B., Zhang, M., Liu, M. et al. A Multimodal Dataset of Psychological, Physiological, and Behavioral Responses in Diverse Driving Scenarios. Sci Data (2026). https://doi.org/10.1038/s41597-026-07894-w
+
+**Zenodo dataset record**:
+Chai, B., Zhang, M., Liu, M., Fang, L., Chen, Z., Gong, W., Jin, S., Senthil Kumar, G. M., Chen, X., & Wang, J. S. (2026). EmoRoad: A Multimodal Dataset of Psychological, Physiological, and Behavioral Responses in Diverse Driving Scenarios [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.21001746
+
 ## EmoRoad Dataset Organization and File Structure
 
 ### Dataset Structure
